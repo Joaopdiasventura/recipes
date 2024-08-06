@@ -1,0 +1,11 @@
+<div class="recipe-detail">
+  <button [routerLink]="['/recipes']">Voltar</button>
+  <div *ngIf="recipe != undefined" class="recipe-info">
+    <h2>{{ recipe.title }}</h2>
+    <p>{{ recipe.resume }}</p>
+    <img [src]="recipe.img" [alt]="recipe.title" />
+  </div>
+  <div *ngIf="recipe == undefined" class="no-recipe">
+    <h1>RECEITA NÃO ENCONTRADA</h1>
+  </div>
+</div>

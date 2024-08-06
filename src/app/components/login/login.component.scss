@@ -1,0 +1,38 @@
+div {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  background-color: #111;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
+input {
+  background-color: #0000;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &[type="submit"] {
+    border: none;
+    background-color: #f00;
+    color: #fff;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #b10000;
+    }
+  }
+}

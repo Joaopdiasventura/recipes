@@ -1,0 +1,11 @@
+<div class="body">
+  <div class="recipes">
+    <h2>Receitas:</h2>
+    <div *ngIf="recipes.length === 0">Nenhuma receita encontrada.</div>
+    <div *ngFor="let recipe of recipes" class="recipe">
+      <h3>{{ recipe.title }}</h3>
+      <img [src]="recipe.imgP" alt="{{ recipe.title }}" />
+      <button [routerLink]="['/recipes', recipe.id]">Ver Ingredientes</button>
+    </div>
+  </div>
+</div>
